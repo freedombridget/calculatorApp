@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT_PRACTICE</title>
+
+    <style>
+        #_myStud{
+            border: 2px solid black;
+            background-color: aqua;
+            text-align: center;
+            margin: 100px 350px;
+            border-radius: 20px;
+        }
+        
+        #_button{
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .addstudent{
+            color: blue;
+            word-spacing: 20px;
+            font-family: monospace;
+            letter-spacing: 5px;
+            text-decoration: underline red;
+        }
+
+        .body_ch{
+            background-color: yellow;
+        }
+        
+        </style>
+</head>
+<body style="background-image: url(../JAVASRIPT_PRACTICES/3433884.jpg);">
+    <!-- HTML FORMS -->
+
+    <!-- <h1>FORMS</h1>
+<form action="">
+    <label for="name"><strong>Name</strong></label>
+    <input required type="text" id="name" placeholder="Enter your name">
+
+    <label for="surname"><strong>Name</strong></label>
+    <input required type="text" id="surname" placeholder="Enter your surname">
+    
+
+    <br><br>
+
+    <label for="email"><strong>Email:</strong></label>
+    <input type="email" id="email" placeholder="Enter your Email">
+
+    <br><br>
+
+    <label for="password"><strong>Password</strong></label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <br><br>
+
+    <label for="age"><strong>Age:</strong></label>
+    <input type="number" id="age" maxlength="2" minlength="2">
+
+
+    <br><br>
+
+    <label for="dob"><strong>DOB:</strong></label>
+    <input type="date" id="dob">
+
+    <h3>SELECT YOUR FAVOURITE FOOD</h3>
+
+    <input type="checkbox" id="yam">
+    <label for="yam"><strong>Yam</strong></label>
+
+    <input type="checkbox" id="rice">
+    <label for="yam"><strong>Rice</strong></label>
+
+    <input type="checkbox" id="bread">
+    <label for="yam"><strong>Bread</strong></label>
+
+    <input type="checkbox" id="beans">
+    <label for="yam"><strong>Beans</strong></label>
+
+    <input type="checkbox" id="amala">
+    <label for="yam"><strong>Amala</strong></label>
+
+    <input type="checkbox" id="fufu">
+    <label for="yam"><strong>Fufu</strong></label>
+
+    <h3>SELECT YOUR GENDER</h3>
+
+    <input name="gender" type="radio" id="male">
+    <label for="yam"><strong>Male</strong></label>
+
+    <input name="gender" type="radio" id="female">
+    <label for="yam"><strong>Female</strong></label>
+
+    <input type="radio" id="nosay" name="gender">
+    <label for="yam"><strong>Nosay</strong></label>
+
+    <br><br>
+    <label for="state"><b>STATE:</b></label>
+    <select name="" id="">
+        <option value="">Select Your State</option>
+        <option value="">Abia</option>
+        <option value="">Anambra</option>
+        <option value="">Adamawa</option>
+        <option value="">Akwa-ibom</option>
+        <option value="">Bauchi</option>
+        <option value="">Benue</option>
+        <option value="">Borno</option>
+        <option value="">Abia</option>
+        <option value="">Anambra</option>
+        <option value="">Adamawa</option>
+        <option value="">Akwa-ibom</option>
+        <option value="">Bauchi</option>
+        <option value="">Benue</option>
+        <option value="">Borno</option>
+        <option value="">Abia</option>
+        <option value="">Anambra</option>
+        <option value="">Adamawa</option>
+        <option value="">Akwa-ibom</option>
+        <option value="">Bauchi</option>
+        <option value="">Benue</option>
+        <option value="">Borno</option>
+    </select>
+
+    <input type="submit" onclick="putValue()" value="SUBMIT">
+    <button onmouseover="getValue()">REGISTER</button>
+    <button onclick="greetme()"><strong>OUCH ME!</strong></button>
+
+</form>
+
+<p id="codeFact">coding is the future and i see 80% of the world learning how to code
+    FAVOUR WOULD BE THERE <br>
+    john will be there <br>
+    emma will be there <br>
+    uche will be there <br>
+</p>
+<br><br>
+<p onclick="getFact()">SPILL THE TRUTH</p>
+
+<p id="showmessage"></p>
+<label for="">MESSAGE</label> <br><br>
+<textarea onblur="clearTyper()" onkeyup="typer()" name="message" id="message" cols="30" rows="10"></textarea>
+
+<br><br>
+
+<form action="" id="format">
+    <h1>TAX CALCULATOR</h1>
+
+   <h4>Hi</h4><p id="nameInput"></p>
+
+   <label for="">Name:</label>
+   <input type="text" id="name&salary" placeholder="Enter your Name">
+
+   <br><br>
+
+   <label for="">Salary:</label>
+   <input type="number" id="salary" placeholder="Enter your Salary">
+
+   <p id="paraName"></p>
+
+   <span id="span22" onclick="getTax()"><b>GET TAX</b></span>
+</form>
+<style>
+    #format{
+        border: 2px solid black;
+        background-color: yellow;
+        border-radius: 10px;
+        text-align: center;
+        margin: 50px 350px;
+        padding: 50px 0px;
+
+    }
+    #span22 {
+        border: 2px solid black;
+        background-color: blue;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        color: white;
+        padding: 5px;
+    }
+</style> -->
+<!-- <div id="_myStud">
+
+<p id="_parahun"></p>
+<h1>ADD STUDENT</h1>
+
+<form action="">
+
+<label for="">Fullname:</label>
+<input type="fullname" id="_fullname" placeholder="fullname"><span style="border: 2px solid blacke; background-color: pink; padding: 5px;" id="_span">GETNAME</span><br><br>
+
+<label for="">Email:</label>
+<input type="email" id="_email" placeholder="email"><span style="border: 2px solid blacke; background-color: pink; padding: 5px;" id="_span1">FILL EMAIL</span><br><br>
+
+<label for="">Age:</label>
+<input type="number" id="_age" placeholder="age"><br><br>
+
+<label for="">Guardia/Parent:</label>
+<input type="fullname" id="_parent" placeholder="Guardia/Parent"><br><br>
+
+<label for="">Gender:</label>
+<label for="">male</label>
+<input type="radio" name="_gender" id="_radio" value="male">
+<label for="">female</label>
+<input type="radio" name="_gender" id="_radio" value="female"><br><br>
+
+<p id="_error"></p>
+
+<label for="">State of Origin:</label>
+<select name="" id="_state">
+    <option value="">SELECT YOUR STATE</option>
+    <option value="oyo">OYO</option>
+    <option value="akwa-ibom">AKWA-IBOM</option>
+    <option value="delta">DELTA</option>
+    <option value="osun">OSUN</option>
+    <option value="enugu">ENUGU</option>
+    <option value="kano">KANO</option>
+    <option value="taraba">TARABA</option>
+    <option value="zamfara">ZAMFARA</option>
+    <option value="imo">IMO</option>
+    <option value="kogi">KOGI</option>
+</select><br><br>
+
+<input type="button" id="_button" value="SAVE STUDENT"><br><br>
+
+</form>
+
+</div>
+<textarea name="" id="input_textarea" cols="30" rows="10"></textarea>
+<input type="button" id="sender_" value="SEND">
+
+<div id="_textme">
+
+</div>
+
+<button id="change_bg">BACKGROUND COLOR CHANGER</button>
+<button id="revert_bg">REVERT BACK</button> -->
+<!-- 
+<h1 id="currencyH1">SHOW CURRENCY CONVERTER</h1>
+<h1 id="currencyH2">CLOSE CURRENCY CONVERTER</h1>
+
+<div id="_converter" style="border: 2px solid black; background-color: blueviolet;              border-radius: 10px; text-align: center; margin: 50px 350px;">
+    <h1>CURRENCY CONVERTER</h1><br>
+
+    <label for="nairaAmount">AMOUNT IN NAIRA:</label>
+    <input type="number" id="nairaAmount"><br><br>
+
+    <label for="">CURRENCY TO NAIRA:</label>
+    <select name="" id="currencyAmount">
+    <option value="">SELECT CURRENCY</option>
+    <option value="US DOLLAR">US DOLLAR</option>
+    <option value="BRITISH POUND">BRITISH POUND</option>
+    <option value="EURO">EURO</option>
+    <option value="JAPANESE YEN">JAPANESE YEN</option>
+    <option value="SOUTH AFRICAN RAND">SOUTH AFRICAN RAND</option>
+    <option value="GHANIAN CEDIS">GHANIAN CEDIS</option>
+    </select>
+    <br><br>
+
+    <p id="showConvert"></p><br><br>
+
+</div>
+
+
+<div style="border: 2px solid black; border-radius: 10px; background-color: crimson; color: white; text-align: center;margin: 100px 200px;padding: 20px;">
+    <h1>COUNT GENERATOR</h1>
+    <label for="">START COUNT:</label>
+    <input type="number" id="startCount_">
+
+
+    <label for="">END COUNT:</label>
+    <input type="number" id="endCount_"><br><br>
+
+    <input style="background-color: blueviolet;color: white;padding: 5px;border-radius: 5px;" type="button" id="countButton_" value="GENERATE COUNT">
+    <span style="text-align: center;width: auto;" id="paragraph_count"></span>
+</div> -->
+
+
+
+<div style="border: 2px solid whitesmoke;border-radius: 50%;background-color:rgb(9, 3, 34);text-align: center;padding: 50px;margin: 170px 300px;color: white;">
+    <h1>CALCULATOR</h1><br><br>
+
+    <label for="">NUMBER 1:</label>
+    <input type="number" id="numMultiplier">&nbsp;&nbsp;
+
+    <label for="">NUMBER 2:</label>
+    <input type="number" id="MultiplierbY"><br><input style="background-color: blueviolet;border-radius: 10px;padding: 5px;margin-top: 10px;border: 2px solid whitesmoke;color:beige" type="button" id="clear" value="CLEAR"><br><br>
+
+    <input style="background-color: blueviolet;border-radius: 10px;padding: 5px;border: 2px solid whitesmoke;color:beige" type="button" id="multiplierButton" value="MULTIPLY">
+    <input style="background-color: blueviolet;border-radius: 10px;padding: 5px;border: 2px solid whitesmoke;color:beige" type="button" id="divisionButton" value="DIVISION">
+    <input style="background-color: blueviolet;border-radius: 10px;padding: 5px;border: 2px solid whitesmoke;color:beige" type="button" id="additionButton" value="ADDITION">
+    <input style="background-color: blueviolet;border-radius: 10px;padding: 5px;border: 2px solid whitesmoke;color:beige" type="button" id="moduloButton" value="MODULO">
+    <input style="background-color: blueviolet;border-radius: 10px;padding: 5px;border: 2px solid whitesmoke;color:beige" type="button" id="subtractButton" value="SUBTRACT">
+
+    <p id="multiplierParagraph"></p>
+</div>
+
+
+
+<script src="JS/jquery.js"></script>
+<script src="js/javascript_practice.js"></script>
+</body>
+</html>
